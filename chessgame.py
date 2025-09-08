@@ -5,7 +5,7 @@
 >>> board.legal_moves  # doctest: +ELLIPSIS
 <LegalMoveGenerator at ... (Nh3, Nf3, Nc3, Na3, h3, g3, f3, e3, d3, c3, ...)>
 >>> chess.Move.from_uci("a8a1") in board.legal_moves
-False
+F
 
 >>> board.push_san("e4")
 Move.from_uci('e2e4')
