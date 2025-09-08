@@ -1,4 +1,4 @@
->>> import chess
+>> import chess
 
 >>> board = chess.Board()
 
@@ -13,6 +13,8 @@ Move.from_uci('e2e4')
 Move.from_uci('e7e5')
 >>> board.push_san("Qh5")
 Move.from_uci('d1h5')
+
+#comments added
 >>> board.push_san("Nc6")
 Move.from_uci('b8c6')
 >>> board.push_san("Bc4")
@@ -26,3 +28,10 @@ Move.from_uci('h5f7')
 True
 
 >>> board
+
+>>> Nf3 = chess.Move.from_uci("g1f3")
+>>> board.push(Nf3)  # Make the move
+
+>>> board.pop()  # Unmake the last move
+Move.from_uci('g1f3')
+
