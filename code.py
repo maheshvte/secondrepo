@@ -6,3 +6,6 @@ elif score >= 80:
     print("Grade: B")
 else:
     print("Grade: C")
+
+
+Extra lines added for extra marks
